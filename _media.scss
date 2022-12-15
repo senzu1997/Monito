@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-side {
+        align-items: flex-start;
+        position: fixed;
+        left: -230px;
+        top: 20px;
+
+        a {
+            display: none;
+        }
+    }
+
+    .right-side {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        right: -20px;
+        top: 40px;
+
+        a {
+            display: none;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+    }
+
+
+}

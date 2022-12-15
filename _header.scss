@@ -14,8 +14,6 @@ header {
 
 }
 
-.container {}
-
 .header-container {
     max-width: 1440px;
     margin: auto;
@@ -39,10 +37,22 @@ header {
         color: $primary-color;
         font-weight: $font-weight-bold;
         line-height: 24px;
+        transition: 0.7s ease;
+
 
     }
 }
 
 .left-side :nth-child(2) {
     margin-left: 50px;
+}
+
+.left-side img {
+    width: 115px;
+    height: 40px;
+}
+
+.left-side a:hover {
+    opacity: 0.5;
+    font-size: 16.1px;
 }
