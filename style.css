@@ -1,0 +1,73 @@
+header {
+  background: url(./Images/Herro\ Banner.png);
+  max-height: 695px;
+}
+
+header {
+  margin: auto;
+  background: url(./Images/Herro\ Banner.png) 50% no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  height: 60vh;
+  border-radius: 0px 0px 40px 40px;
+  padding-top: 30px;
+}
+
+.header-container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .left-side {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-left: 150px;
+}
+.header-container .right-side {
+  width: 30%;
+  margin-left: 100px;
+}
+.header-container .left-side a {
+  color: #003459;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.left-side :nth-child(2) {
+  margin-left: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #003459;
+}
+
+.right-side button {
+  background-color: #003459;
+  width: 120px;
+  height: 30px;
+  border-radius: 57px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  margin-right: 20px;
+}
+
+.registration {
+  background-color: white !important;
+  color: #003459 !important;
+}/*# sourceMappingURL=style.css.map */

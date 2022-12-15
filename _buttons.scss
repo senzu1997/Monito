@@ -1,0 +1,16 @@
+.right-side button {
+    background-color: $primary-color;
+    width: 120px;
+    height: 30px;
+    border-radius: $button-border-radius;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+    font-size: 15px;
+    border: none;
+    margin-right: 20px;
+}
+
+.registration {
+    background-color: $color-white !important;
+    color: $primary-color !important;
+}
