@@ -14,45 +14,33 @@ header {
 
 }
 
-.header-container {
+.nav {
     max-width: 1440px;
+    height: 50px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
 
-    .left-side {
-        display: flex;
-        justify-content: space-evenly;
-        width: 50%;
-        margin-left: 150px;
-    }
-
-    .right-side {
-        width: 30%;
-        margin-left: 100px;
-    }
-
-
-    .left-side a {
+    a {
         color: $primary-color;
         font-weight: $font-weight-bold;
         line-height: 24px;
         transition: 0.7s ease;
+    }
 
+    :nth-child(2) {
+        margin-left: 50px;
+    }
 
+    img {
+        width: 115px;
+        height: 40px;
     }
 }
 
-.left-side :nth-child(2) {
-    margin-left: 50px;
-}
-
-.left-side img {
-    width: 115px;
-    height: 40px;
-}
-
-.left-side a:hover {
+.nav a:hover {
     opacity: 0.5;
     font-size: 16.1px;
 }

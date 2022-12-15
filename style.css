@@ -13,39 +13,30 @@ header {
   padding-top: 30px;
 }
 
-.header-container {
+.nav {
   max-width: 1440px;
+  height: 50px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-}
-.header-container .left-side {
-  display: flex;
   justify-content: space-evenly;
-  width: 50%;
-  margin-left: 150px;
+  align-items: center;
+  width: 90%;
 }
-.header-container .right-side {
-  width: 30%;
-  margin-left: 100px;
-}
-.header-container .left-side a {
+.nav a {
   color: #003459;
   font-weight: 700;
   line-height: 24px;
   transition: 0.7s ease;
 }
-
-.left-side :nth-child(2) {
+.nav :nth-child(2) {
   margin-left: 50px;
 }
-
-.left-side img {
+.nav img {
   width: 115px;
   height: 40px;
 }
 
-.left-side a:hover {
+.nav a:hover {
   opacity: 0.5;
   font-size: 16.1px;
 }
@@ -66,7 +57,7 @@ body {
   background-color: #003459;
 }
 
-.right-side button {
+.nav button {
   background-color: #003459;
   width: 120px;
   height: 30px;
@@ -75,7 +66,6 @@ body {
   font-weight: 700;
   font-size: 15px;
   border: none;
-  margin-right: 20px;
 }
 
 .registration {
@@ -83,38 +73,68 @@ body {
   color: #003459 !important;
 }
 
-.right-side button:hover {
+.login {
+  margin-left: 50px;
+  margin-right: -30px;
+}
+
+.nav button:hover {
   transition: 0.3s ease;
   opacity: 0.7;
-  font-size: 16.1px;
 }
 
 @media (max-width: 900px) {
   .header-container {
     display: flex;
-    justify-content: space-between;
   }
-  .left-side {
-    align-items: flex-start;
+  .nav {
+    display: grid;
+    gap: 20px;
     position: fixed;
-    left: -230px;
+    right: -100%;
+    top: 0px;
+    background: url(/Images/nav-menu.png) 50% no-repeat;
+    background-size: cover;
+    height: 60%;
+    width: 30%;
+    transition: 0.3s;
+    border-radius: 10px 0px 0px 10px;
+    padding-top: 15px;
+  }
+  .nav a {
+    margin: auto;
+  }
+  .nav :nth-child(2) {
+    margin-left: 0;
+    margin: auto;
+  }
+  .nav :nth-child(5) {
+    color: #fceed5;
+  }
+  .nav img {
+    position: fixed;
+    left: 10px;
     top: 20px;
   }
-  .left-side a {
-    display: none;
-  }
-  .right-side {
+  .nav .register-form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    align-items: left;
+    margin-bottom: 10px;
+  }
+  .nav .menu-toggle {
+    display: block;
     position: fixed;
-    right: -20px;
+    right: 10px;
     top: 40px;
   }
-  .right-side a {
-    display: none;
+  .nav .login {
+    margin-left: 0;
+    margin-right: 0;
   }
-  .right-side .menu-toggle {
-    display: block;
+  .nav.active {
+    right: 0px;
   }
 }
 .menu-toggle {
