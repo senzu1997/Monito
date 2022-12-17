@@ -7,8 +7,8 @@ const registerBtn = document.querySelector('.registration');
 const closeBtn = document.querySelector('.close');
 
 let menuOpen = false;
-let loginOpen = false
-let registerOpen = false
+let loginOpen = false;
+let registerOpen = false;
 
 menuBtn.addEventListener('click', () => {
     if (!menuOpen) {
@@ -23,11 +23,10 @@ menuBtn.addEventListener('click', () => {
     }
 })
 loginBtn.addEventListener('click', () => {
-    if (!loginOpen && registerOpen === false) {
+    if (!loginOpen) {
         loginForm.classList.add('open');
+        registerForm.classList.remove('open');
         loginOpen = true;
-
-
     } else {
         loginForm.classList.remove('open');
     }
@@ -38,10 +37,10 @@ closeBtn.addEventListener('click', () => {
     }
 })
 registerBtn.addEventListener('click', () => {
-    if (!registerOpen && loginOpen === false) {
+    if (!registerOpen) {
         registerForm.classList.add('open');
+        loginForm.classList.remove('open');
         registerOpen = true;
-
     } else {
         registerForm.classList.remove('open');
         registerOpen = false;
