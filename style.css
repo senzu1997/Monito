@@ -83,12 +83,14 @@ body {
   opacity: 0.7;
 }
 
-.submit {
+.submit, .close {
   background-color: #003459;
   color: white;
+  font-weight: 700;
+  padding: 5px;
   border: 1px solid;
   border-radius: 5px;
-  width: 30%;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 900px) {
@@ -212,8 +214,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(./Images/background_login.png) 50% no-repeat;
-  background-size: cover;
+  background-color: #fceed5;
 }
 #login-form h3 {
   text-align: center;
@@ -234,22 +235,79 @@ body {
 #login-form.open {
   width: 20%;
   height: 50%;
-  padding: 20px;
-  background-color: white;
   border: 1px solid gray;
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
+  padding: 10px;
   transform: translate(-50%, -50%);
-  background: url(./Images/background_login.png) 50% no-repeat;
+  background-color: #fceed5;
   background-size: cover;
 }
-#login-form.open input {
-  width: 80%;
-  height: 7%;
+#login-form.open h3 {
+  font-size: 2vw;
+  font-weight: 700;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+#login-form.open .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#login-form.open .login-container input {
+  width: 90%;
+  height: 15%;
+}
+#login-form.open .login-container label {
+  margin-bottom: -10px;
+}
+
+#register-form {
+  display: none;
+}
+
+#register-form.open {
+  width: 20%;
+  height: 50%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #fceed5;
+  background-size: cover;
+}
+#register-form.open h3 {
+  font-size: 2vw;
+  font-weight: 700;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+#register-form.open .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#register-form.open .login-container input {
+  width: 90%;
+  height: 15%;
+}
+#register-form.open .login-container label {
+  margin-bottom: -10px;
 }/*# sourceMappingURL=style.css.map */

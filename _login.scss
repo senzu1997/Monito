@@ -10,8 +10,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url(./Images/background_login.png) 50% no-repeat;
-    background-size: cover;
+    background-color: $secondary-color;
 
 
     h3 {
@@ -37,26 +36,89 @@
 #login-form.open {
     width: 20%;
     height: 50%;
-    padding: 20px;
-    background-color: white;
     border: 1px solid gray;
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     flex-direction: column;
     position: fixed;
     top: 50%;
     left: 50%;
+    padding: 10px;
     transform: translate(-50%, -50%);
-    background: url(./Images/background_login.png) 50% no-repeat;
+    background-color: $secondary-color;
     background-size: cover;
 
-    input {
-        width: 80%;
-        height: 7%;
-
+    h3 {
+        font-size: 2vw;
+        font-weight: $font-weight-bold;
+        margin-top: -20px;
+        margin-bottom: 60px;
     }
 
-    label {}
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        input {
+            width: 90%;
+            height: 15%;
+
+        }
+
+        label {
+            margin-bottom: -10px;
+        }
+    }
+}
+
+#register-form {
+    display: none;
+}
+
+#register-form.open {
+    width: 20%;
+    height: 50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background-color: $secondary-color;
+    background-size: cover;
+
+    h3 {
+        font-size: 2vw;
+        font-weight: $font-weight-bold;
+        margin-top: -20px;
+        margin-bottom: 60px;
+    }
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        input {
+            width: 90%;
+            height: 15%;
+
+        }
+
+        label {
+            margin-bottom: -10px;
+        }
+    }
 }
