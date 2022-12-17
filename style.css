@@ -83,6 +83,14 @@ body {
   opacity: 0.7;
 }
 
+.submit {
+  background-color: #003459;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 30%;
+}
+
 @media (max-width: 900px) {
   .header-container {
     display: flex;
@@ -190,4 +198,58 @@ body {
 .menu-toggle {
   display: none;
   margin: auto;
+}
+
+#login-form {
+  width: 20%;
+  height: 50%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(./Images/background_login.png) 50% no-repeat;
+  background-size: cover;
+}
+#login-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#login-form label {
+  width: 30%;
+  font-size: 2vh;
+  font-weight: 700;
+  text-align: center;
+}
+#login-form input {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+#login-form.open {
+  width: 20%;
+  height: 50%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(./Images/background_login.png) 50% no-repeat;
+  background-size: cover;
+}
+#login-form.open input {
+  width: 80%;
+  height: 7%;
 }/*# sourceMappingURL=style.css.map */
