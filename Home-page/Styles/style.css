@@ -1,11 +1,11 @@
 header {
-  background: url(../Images/Herro\ Banner.png);
+  background: url(/Home-page/Images/Herro\ Banner.png);
   max-height: 695px;
 }
 
 header {
   margin: auto;
-  background: url(../Images/Herro\ Banner.png) 50% no-repeat;
+  background: url(/Home-page/Images/Herro\ Banner.png) 50% no-repeat;
   background-size: cover;
   max-width: 1440px;
   height: 60vh;
