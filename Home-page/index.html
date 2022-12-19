@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-    <link href="/Home-page/Styles/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <title>Monito - Pets for Best!</title>
 </head>
@@ -20,14 +20,14 @@
 <body>
     <header>
         <div class="nav">
-            <img src="/Home-page/Images/Frame.png" alt="Monito logo">
+            <img src="./Images/Frame.png" alt="Monito logo">
             <a href="">Home</a>
             <a href="">Category</a>
             <a href="">About</a>
             <a href="">Contact</a>
             <div class="login-form">
                 <button class="login">Login</button>
-                <form id="login-form" action="/php/process-signup.php" method="POST">
+                <form id="login-form" action="./php/process-signup.php" method="POST">
                     <h3>Login</h3>
                     <div class="login-container">
                         <label for="username">Username:</label><br>
@@ -39,30 +39,31 @@
                     </div>
                 </form>
                 <button class="registration">Register</button>
-                <form id="register-form" action="/php/process-signup.php" method="POST">
+                <form id="register-form" action="./php/process-signup.php" method="POST">
                     <h3>Register</h3>
                     <div class="register-container">
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username">
                         <label for="password">Password:</label>
                         <input type="password" id="password" name="password">
+                        <label for="repeatPassword">Repeat Password:</label>
+                        <input type="password" id="repeatPassword" name="repeatPassword">
                         <label for="email">Email:</label>
-                        <input type="email">
-                        <label for="email">Email Confirmation:</label>
-                        <input type="email">
+                        <input type="email" id="email" name="email">
                         <div class="register-form-btn">
                             <input class="submit" type="submit" value="Register">
                             <input class="close" type="submit" value="Close">
                         </div>
+                </form>
 
-                    </div>
             </div>
-            <div class="menu-toggle">
-                <div class="menu-btn-burger">
-                </div>
-                <div class="right-side">
-                </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="menu-btn-burger">
             </div>
+            <div class="right-side">
+            </div>
+        </div>
         </div>
         </div>
     </header>
