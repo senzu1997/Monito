@@ -11,7 +11,7 @@ if(! filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)) {
 if ($_POST['password'] !== $_POST['repeatPassword']) {
     die("Password adress does not match");
 }
-if (strlen($_POST['password']) <8) {
+if (strlen($_POST['password']) < 8) {
     die("Password must be at least 8 characters");
 }
 
@@ -37,18 +37,17 @@ $stmt->bind_param("sss",$_POST['username'],$password_hash,$_POST['email'],);
 mysqli_report(MYSQLI_REPORT_OFF);
 if ($stmt->execute()) {
 
-    header("Location: signup-success.html");
+    header("Location: signup-success.php");
     exit;
     
 } else {
     
     if ($mysqli->errno === 1062) {
-       echo("email already taken");
+       echo("Email already taken");
     } else {
         echo($mysqli->error . " " . $mysqli->errno);
     }
 }
-echo $mysqli->error;
 
 
 
