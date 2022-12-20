@@ -1,5 +1,5 @@
 <?php
-
+include "./php/login.php"
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +42,7 @@
                         <input class="close" type="submit" value="Close">
                     </div>
                 </form>
+                
                 <button class="registration">Register</button>
                 <form id="register-form" action="./php/process-signup.php" method="POST">
                     <h3>Register</h3>
@@ -59,6 +60,24 @@
                             <input class="close" type="submit" value="Close">
                         </div>
                 </form>
+                <div class="register-success">
+                <form id="login-form" method="POST">
+                    <h3>Login</h3>
+                    <h4>
+                    <?php if ($is_invalid): ?>
+        <em>Invalid login</em>
+    <?php endif; ?>
+                 </h4>
+                    <div class="login-container">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>"> <br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password"><br><br>
+                        <input class="submit" type="submit" value="Log in">
+                        <input class="close" type="submit" value="Close">
+                    </div>
+                </form>
+                </div>
 
             </div>
         </div>
