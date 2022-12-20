@@ -1,0 +1,350 @@
+body {
+    background-color: #fceed5;
+}
+
+header {
+    background: url(../../Images/Herro\ Banner.png);
+    max-height: 695px;
+}
+
+header {
+    margin: auto;
+    background: url(../../Images/Herro\ Banner.png) 50% no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    height: 60vh;
+    border-radius: 0px 0px 40px 40px;
+    padding-top: 30px;
+}
+
+.nav {
+    max-width: 1440px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.nav a {
+    color: #003459;
+    font-weight: 700;
+    line-height: 24px;
+    transition: 0.7s ease;
+}
+
+.nav img {
+    width: 115px;
+    height: 40px;
+}
+
+.nav a:hover {
+    opacity: 0.5;
+    font-size: 16.1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #003459;
+}
+
+.nav button {
+    background-color: #003459;
+    width: 120px;
+    height: 30px;
+    border-radius: 57px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+}
+
+.registration {
+    background-color: white !important;
+    color: #003459 !important;
+}
+
+.login {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.nav button:hover {
+    transition: 0.3s ease;
+    opacity: 0.7;
+}
+
+.submit,
+.close {
+    background-color: #003459;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.register-form-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.register-form-btn .submit,
+.register-form-btn .close {
+    padding: 10px;
+    justify-content: center;
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+    .header-container {
+        display: flex;
+    }
+
+    .nav {
+        display: grid;
+        gap: 20px;
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        background: url(/Images/nav-menu.png) 50% no-repeat;
+        background-size: cover;
+        height: 60%;
+        width: 30%;
+        transition: 0.3s;
+        border-radius: 10px 0px 0px 10px;
+        padding-top: 15px;
+    }
+
+    .nav a {
+        margin: auto;
+    }
+
+    .nav :nth-child(2) {
+        margin-left: 0;
+        margin: auto;
+    }
+
+    .nav :nth-child(5) {
+        color: #fceed5;
+    }
+
+    .nav img {
+        position: fixed;
+        left: 10px;
+        top: 20px;
+    }
+
+    .nav .register-form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: left;
+        margin-bottom: 10px;
+    }
+
+    .nav .menu-toggle {
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 40px;
+    }
+
+    .nav .login {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .nav.active {
+        right: 0px;
+    }
+}
+
+.menu-toggle {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 50px;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-toggle .menu-btn-burger {
+    width: 35px;
+    height: 4px;
+    background-color: #003459;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #003459;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(10px);
+}
+
+/* ANIMATION */
+.menu-toggle.open .menu-btn-burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-toggle.open .menu-btn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-toggle.open .menu-btn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu-toggle {
+    display: none;
+    margin: auto;
+}
+
+#login-form {
+    display: none;
+}
+
+#login-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    width: 30%;
+    font-size: 2vh;
+    font-weight: 700;
+    text-align: center;
+}
+
+#login-form input {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#login-form.open {
+    width: 20%;
+    height: 50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #fceed5;
+    background-size: cover;
+}
+
+#login-form.open h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+#login-form.open .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#login-form.open .login-container input {
+    width: 90%;
+}
+
+#login-form.open .login-container label {
+    margin-bottom: -10px;
+}
+
+#register-form {
+    display: none;
+}
+
+#register-form.open {
+    width: 20%;
+    height: 60%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #fceed5;
+}
+
+#register-form.open h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#register-form.open .register-container {
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#register-form.open .register-container input {
+    border-radius: 4px;
+    border: 1px solid;
+    width: 100%;
+    height: 70%;
+}
+
+#register-form.open .register-container label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.signup-sucess {
+    width: 20%;
+    height: 60%;
+}

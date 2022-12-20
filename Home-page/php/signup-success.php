@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-    <link href="../style.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
 
     <title>Monito - Pets for Best!</title>
 </head>
@@ -39,7 +39,10 @@
         </div>
     </header>
     <section>
-        <h1>Signup successful You can now <a href="login.php">Login</a></h1>
+        <div class="signup-success">
+        <p>Signup successful You can now <a href="login.php">Login</a></p>
+        </div>
+        
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
