@@ -13,34 +13,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/signup.css" rel="stylesheet">
 
     <title>Monito - Pets for Best!</title>
 </head>
 
 <body>
-    <header>
-        <div class="nav">
-            <img src="../Images/Frame.png" alt="Monito logo">
-            <a href="">Home</a>
-            <a href="">Category</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-                    </div>
-            </div>
-        </div>
-        <div class="menu-toggle">
-            <div class="menu-btn-burger">
-            </div>
-            <div class="right-side">
-            </div>
-        </div>
-        </div>
-        </div>
-    </header>
     <section>
-        <div class="signup-success">
-        <p>Signup successful You can now <a href="login.php">Login</a></p>
+        <div class="signup-done">
+        <p>Signup successful You can now <div><a href="login.php">Login</a></div> </p>
         </div>
         
     </section>
