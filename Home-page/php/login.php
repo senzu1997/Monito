@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
-    <div class="login">
+    <div class="loginclas">
     <form id="login-form" method="POST">
                     <h3>Login</h3>
                     <h4>

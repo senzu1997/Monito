@@ -43,7 +43,7 @@ if (isset($_SESSION["user_id"])) {
             <?php if (isset($_SESSION["user_id"])){  ?>
                 <p> <img src="./images/no-image.jpg" alt=""> Hello <?= $name; ?> <a href="./php/logout.php">Log out</a> </p>
                 <?php }else{  ?>
-            <div class="login-form">
+            <div class="logind-form">
                 <button class="login">Login</button>
                 <form id="login-form" action="./php/process-signup.php" method="POST">
                     <h3>Login</h3>

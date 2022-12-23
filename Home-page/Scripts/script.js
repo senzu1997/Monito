@@ -36,6 +36,11 @@ closeBtn.addEventListener('click', () => {
         loginForm.classList.remove('open');
     }
 })
+closeBtn.addEventListener('click', () => {
+    if (registerOpen) {
+        registerForm.classList.remove('open');
+    }
+})
 registerBtn.addEventListener('click', () => {
     if (!registerOpen) {
         registerForm.classList.add('open');
