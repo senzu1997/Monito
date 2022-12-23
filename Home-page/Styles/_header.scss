@@ -17,6 +17,7 @@ header {
 .nav {
     max-width: 1440px;
     height: 50px;
+    line-height: 24px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -35,9 +36,23 @@ header {
         width: 115px;
         height: 40px;
     }
+
+    p {
+        color: white;
+        font-weight: $font-weight-bold;
+        font-size: 18px;
+        color: $primary-color;
+        margin-top: 10px;
+    }
 }
 
 .nav a:hover {
     opacity: 0.5;
     font-size: 16.1px;
+}
+
+.nav p img {
+    width: 50px;
+    border-radius: 5px;
+    margin-right: 5px;
 }

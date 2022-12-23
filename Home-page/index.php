@@ -24,7 +24,9 @@ $name = htmlspecialchars($user["username"]);
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style.css">
     <link href="style.css" rel="stylesheet">
+    
 
     <title>Monito - Pets for Best!</title>
 </head>
@@ -38,7 +40,7 @@ $name = htmlspecialchars($user["username"]);
             <a href="">About</a>
             <a href="">Contact</a>
             <?php if (isset($_SESSION["user_id"])){  ?>
-                <p> Hello <?= $name; ?> </p>
+                <p> <img src="./images/no-image.jpg" alt=""> Hello <?= $name; ?> </p>
                 <?php }else{  ?>
             <div class="login-form">
                 <button class="login">Login</button>
