@@ -33,10 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
-    
-<form id="login-form" method="POST">
+    <div class="login">
+    <form id="login-form" method="POST">
                     <h3>Login</h3>
                     <h4>
                     <?php if ($is_invalid): ?>
@@ -47,10 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>"> <br>
                         <label for="password">Password:</label><br>
-                        <input type="password" id="password" name="password"><br><br>
-                        <input class="submit" type="submit" value="Log in">
+                        <input type="password" id="password" name="password"><br>
+                        <input class="submit" type="submit" value="Log in"><br>
                         <input class="close" type="submit" value="Close">
                     </div>
                 </form>
+    </div>
+
 </body>
 </html>
