@@ -6,8 +6,9 @@ if (isset($_SESSION["user_id"])) {
     $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
     $result = $mysqli->query($sql);
     $user = $result->fetch_assoc();
+    $name = htmlspecialchars($user["username"]);
 }
-$name = htmlspecialchars($user["username"]);
+
 ?>
 
 <!DOCTYPE html>
@@ -40,15 +41,15 @@ $name = htmlspecialchars($user["username"]);
             <a href="">About</a>
             <a href="">Contact</a>
             <?php if (isset($_SESSION["user_id"])){  ?>
-                <p> <img src="./images/no-image.jpg" alt=""> Hello <?= $name; ?> </p>
+                <p> <img src="./images/no-image.jpg" alt=""> Hello <?= $name; ?> <a href="./php/logout.php">Log out</a> </p>
                 <?php }else{  ?>
             <div class="login-form">
                 <button class="login">Login</button>
-                <form id="login-form" action="./php/index.php" method="POST">
+                <form id="login-form" action="./php/process-signup.php" method="POST">
                     <h3>Login</h3>
                     <div class="login-container">
-                        <label for="username">Username:</label><br>
-                        <input type="text" id="username" name="username"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br>
                         <label for="password">Password:</label><br>
                         <input type="password" id="password" name="password"><br><br>
                         <input class="submit" type="submit" value="Log in">
@@ -70,7 +71,7 @@ $name = htmlspecialchars($user["username"]);
                         <input type="email" id="email" name="email">
                         <div class="register-form-btn">
                             <input class="submit" type="submit" value="Register">
-                            <input class="close" type="submit" value="Close">
+                            <input class="close" type="button" value="Close">
                         </div>
                 </form>
 
