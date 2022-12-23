@@ -49,7 +49,4 @@ if ($stmt->execute()) {
     }
 }
 
-
-
-
 ?>
