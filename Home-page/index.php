@@ -26,10 +26,7 @@ if (isset($_SESSION["user_id"])) {
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link href="style.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Monito - Pets for Best!</title>
 </head>
 
@@ -56,9 +53,8 @@ if (isset($_SESSION["user_id"])) {
             <div class="right-side">
             </div>
         </div>
-        </div>
-        </div>
     </header>
+    <h2 class="h2">Labas</h2>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
