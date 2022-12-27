@@ -1,3 +1,9 @@
+<?php
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,27 +17,56 @@
 <body>
     <div class="register-container">
         <h2>Register</h2>
-        <form action="./process-signup.php" method="POST">
+        <form action="./signup.php" method="POST">
                 <div>
                     <label for="username">Username</label>
                 </div>
             <input type="username" name="username">
+           <?php if (empty($_POST["username"]) && $_SERVER['REQUEST_METHOD'] == 'POST') {?>
+            <p class ="validation">Username is required</p>
+            <?php }else{ 
+            echo "<p>". " " . "</p>";
+            }?>
                 <div>
                     <label for="email">Email</label>
                 </div>
             <input type="email" name="email">
+            <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if (empty($_POST["username"])){?>
+                    <p class ="validation">Valid email is required</p>
+                    <?php }else{ 
+                    echo "<p>". " " . "</p>";
+                    }
+            }?>
                 <div>
                     <label for="password">Password</label>
                 </div>
             <input type="password" name="password">
+            <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if (strlen($_POST["password"]) < 8) {?>
+                    <p class ="validation">Password must be at least 8 characters</p>
+                    <?php }else{ 
+                    echo "<p>". " " . "</p>";
+                    }
+            }?>
                 <div>
                     <label for="passwordConfirm">Password Confirmation</label>
                 </div>
-            <input type="password" name="passwordConfirmation">
-            <div class="form-buttons">
-                <button type = "submit" id="register" >Register</button>
-                <button type = "submit" id="registerCancel" >Cancel</button>
-            </div>
+            <input type="password" name="password_confirmation">
+            <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if ($_POST["password"] !== $_POST["password_confirmation"]) {?>
+                    <p class ="validation">Password must match</p>
+                    <?php }else{ 
+                    echo "<p>". " " . "</p>";
+                    }
+            }?>
+                <div class="form-buttons">
+                    <button type = "submit" id="register">Register</button>
+
+                    <a href=".././index.php">
+                        <button type = "button" id="registerCancel">Cancel</button></a>
+                    
+                </div>
             
             
         </form>
