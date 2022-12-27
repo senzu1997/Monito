@@ -31,16 +31,7 @@ loginBtn.addEventListener('click', () => {
         loginForm.classList.remove('open');
     }
 })
-closeBtn.addEventListener('click', () => {
-    if (loginOpen) {
-        loginForm.classList.remove('open');
-    }
-})
-closeBtn.addEventListener('click', () => {
-    if (registerOpen) {
-        registerForm.classList.remove('open');
-    }
-})
+
 registerBtn.addEventListener('click', () => {
     if (!registerOpen) {
         registerForm.classList.add('open');
@@ -49,5 +40,16 @@ registerBtn.addEventListener('click', () => {
     } else {
         registerForm.classList.remove('open');
         registerOpen = false;
+    }
+})
+closeBtn.addEventListener('click', () => {
+    if (registerOpen) {
+        registerForm.classList.remove('open');
+    }
+})
+
+closeBtn.addEventListener('click', () => {
+    if (loginOpen) {
+        loginForm.classList.remove('open');
     }
 })

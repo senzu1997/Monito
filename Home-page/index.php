@@ -1,15 +1,16 @@
 <?php
-include "./php/login.php";
-session_start();
-if (isset($_SESSION["user_id"])) {
-    $mysqli = include "./php/database/db.php";
-    $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
-    $result = $mysqli->query($sql);
-    $user = $result->fetch_assoc();
-    $name = htmlspecialchars($user["username"]);
-}
+// include "./php/login.php";
+// session_start();
+// if (isset($_SESSION["user_id"])) {
+//     $mysqli = include "./php/database/db.php";
+//     $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
+//     $result = $mysqli->query($sql);
+//     $user = $result->fetch_assoc();
+//     $name = htmlspecialchars($user["username"]);
+// }
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +26,7 @@ if (isset($_SESSION["user_id"])) {
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./styles/style.css">
+        <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <link href="style.css" rel="stylesheet">
     
 
@@ -44,37 +45,8 @@ if (isset($_SESSION["user_id"])) {
                 <p> <img src="./images/no-image.jpg" alt=""> Hello <?= $name; ?> <a href="./php/logout.php">Log out</a> </p>
                 <?php }else{  ?>
             <div class="logind-form">
-                <button class="login">Login</button>
-                <form id="login-form" action="./php/login.php" method="POST">
-                    <h3>Login</h3>
-                    <div class="login-container">
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="password">Password:</label><br>
-                        <input type="password" id="password" name="password"><br><br>
-                        <input class="submit" type="submit" value="Log in">
-                        <input class="close" type="submit" value="Close">
-                    </div>
-                </form>
-
-                <button class="registration">Register</button>
-                <form id="register-form" action="./php/process-signup.php" method="POST">
-                    <h3>Register</h3>
-                    <div class="register-container">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password">
-                        <label for="repeatPassword">Repeat Password:</label>
-                        <input type="password" id="repeatPassword" name="repeatPassword">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                        <div class="register-form-btn">
-                            <input class="submit" type="submit" value="Register">
-                            <input class="close" type="button" value="Close">
-                        </div>
-                </form>
-
+                <a href="./php/login.php"><button class="login">Login</button></a>
+                <a href="./php/signup.php"><button class="registration">Register</button></a>    
             </div>
             <?php } ?>
         </div>
