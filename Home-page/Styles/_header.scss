@@ -1,11 +1,11 @@
 header {
-    background: url(/Home-page/Images/Herro\ Banner.png);
+    background: url(../Images/Herro\ Banner.png);
     max-height: 695px;
 }
 
 header {
     margin: auto;
-    background: url(/Home-page/Images/Herro\ Banner.png) 50% no-repeat;
+    background: url(../Images/Herro\ Banner.png) 50% no-repeat;
     background-size: cover;
     max-width: 1440px;
     height: 60vh;
@@ -50,8 +50,4 @@ header {
 .nav a:hover {
     opacity: 0.5;
     font-size: 16.1px;
-}
-
-h2 {
-    color: white;
 }
