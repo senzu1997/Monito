@@ -1,13 +1,13 @@
 <?php
 // include "./php/login.php";
-// session_start();
-// if (isset($_SESSION["user_id"])) {
-//     $mysqli = include "./php/database/db.php";
-//     $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
-//     $result = $mysqli->query($sql);
-//     $user = $result->fetch_assoc();
-//     $name = htmlspecialchars($user["username"]);
-// }
+session_start();
+if (isset($_SESSION["user_id"])) {
+    $mysqli = include "./php/database/db.php";
+    $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
+    $result = $mysqli->query($sql);
+    $user = $result->fetch_assoc();
+    $name = htmlspecialchars($user["username"]);
+}
 
 ?>
 
@@ -26,9 +26,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-        <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="style.css" rel="stylesheet">
-    
+
 
     <title>Monito - Pets for Best!</title>
 </head>
@@ -41,12 +41,12 @@
             <a href="">Category</a>
             <a href="">About</a>
             <a href="">Contact</a>
-            <?php if (isset($_SESSION["user_id"])){  ?>
-                <p> <img src="./images/no-image.jpg" alt=""> Hello <?= $name; ?> <a href="./php/logout.php">Log out</a> </p>
-                <?php }else{  ?>
+            <?php if (isset($_SESSION["user_id"])) { ?>
+            <p class="user"> Hello <?= $name; ?> <a href="./php/logout.php">Log out</a> </p>
+            <?php } else { ?>
             <div class="logind-form">
                 <a href="./php/login.php"><button class="login">Login</button></a>
-                <a href="./php/signup.php"><button class="registration">Register</button></a>    
+                <a href="./php/signup.php"><button class="registration">Register</button></a>
             </div>
             <?php } ?>
         </div>
@@ -60,7 +60,7 @@
         </div>
     </header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="./Scripts/script.js"></script>

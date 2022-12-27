@@ -59,9 +59,13 @@ body {
 .cancel {
     position: fixed;
     right: 450px;
-    bottom: 78px;
+    bottom: 52px;
 }
 
 .cancel:hover {
     cursor: pointer;
+}
+
+.validation {
+    color: red;
 }
