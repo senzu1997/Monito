@@ -45,7 +45,7 @@ if (isset($_SESSION["user_id"])) {
                 <?php }else{  ?>
             <div class="logind-form">
                 <button class="login">Login</button>
-                <form id="login-form" action="./php/process-signup.php" method="POST">
+                <form id="login-form" action="./php/login.php" method="POST">
                     <h3>Login</h3>
                     <div class="login-container">
                         <label for="email">Email</label><br>
