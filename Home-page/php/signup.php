@@ -9,13 +9,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->prepare($sql);
     $stmt->bind_param("sss", $_POST['username'], $_POST['email'], $password_hash);
     mysqli_report(MYSQLI_REPORT_OFF);
-    $stmt->execute();
+    if ($stmt->execute()) {
+        header("Location: ./signup-success.html");
+        exit;
+    }
+
+
+
+
+
 }
-
-
-
-
-
 
 ?>
 <!DOCTYPE html>

@@ -12,9 +12,9 @@ body {
     background-position: top;
 }
 
-.register-container {
+.login-container {
     width: 50%;
-    height: 550px;
+    height: 400px;
     background-color: #fceed5;
     margin: auto;
     display: flex;
@@ -27,38 +27,41 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, 0);
+    position: absolute;
 }
 
-.register-container h2 {
+.login-container h2 {
     font-size: 3rem;
     font-weight: 600;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.register-container button {
+.login-container button {
     margin-top: 20px;
-    width: 40%;
-    height: 10%;
+    width: 100px;
+    height: 30px;
     background-color: #003459;
     color: white;
     font-weight: 600;
     border-radius: 10px;
 }
 
-.register-container input {
+.login-container input {
     width: 400px;
     height: 30px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid;
+    margin-top: 10px;
 }
 
-.validation {
-    color: red;
-    font-size: 14px;
-    margin-top: -20px;
-    margin-bottom: 0px;
-
+.cancel {
+    position: fixed;
+    right: 450px;
+    bottom: 78px;
 }
-.
+
+.cancel:hover {
+    cursor: pointer;
+}
