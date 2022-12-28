@@ -8,9 +8,10 @@ header {
   background: url(../Images/Herro\ Banner.png) 50% no-repeat;
   background-size: cover;
   max-width: 1440px;
-  height: 60vh;
+  height: 80vh;
   border-radius: 0px 0px 40px 40px;
   padding-top: 30px;
+  padding: 2% 5%;
 }
 
 .nav {
@@ -127,6 +128,46 @@ body {
   margin-right: 20px;
 }
 
+.view-intro {
+  color: #003459;
+  border: 1.5px solid;
+  padding: 0.6em 1.5em;
+  border-radius: 57px;
+  background-color: #fceed5;
+  font-weight: 600;
+}
+
+.explore {
+  color: white;
+  border: 1.5px solid;
+  padding: 0.6em 1.5em;
+  border-radius: 57px;
+  background-color: #003459;
+  font-weight: 500;
+}
+
+.hero-buttons :nth-child(1):hover {
+  color: #fceed5;
+  background-color: #003459;
+  cursor: pointer;
+}
+.hero-buttons :nth-child(1):hover img {
+  background-color: #fceed5;
+  border-radius: 11px;
+}
+
+.hero-buttons :nth-child(2):hover {
+  color: #003459;
+  background-color: #fceed5;
+  cursor: pointer;
+}
+
+.intro-buttons button:hover {
+  color: #003459;
+  background-color: #fceed5;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .header {
     display: flex;
@@ -235,4 +276,46 @@ body {
 .menu-toggle {
   display: none;
   margin: auto;
+}
+
+.hero-banner {
+  margin-top: 80px;
+  width: 45%;
+}
+.hero-banner h1 {
+  color: #003459;
+  font-weight: 700;
+  font-size: 3.5vw;
+  line-height: 68px;
+}
+.hero-banner h2 {
+  font-weight: 700;
+  color: #003459;
+  font-size: 2.5vw;
+  line-height: 60px;
+}
+.hero-banner p {
+  font-weight: 500;
+  line-height: 24px;
+  color: #242B33;
+  font-size: 1vw;
+}
+
+.intro-video {
+  position: fixed;
+  opacity: 0;
+  top: 13%;
+  right: 15%;
+  transform: translateX(200%);
+}
+
+.intro-video.open {
+  display: block;
+  position: fixed;
+  top: 13%;
+  right: 15%;
+  transition-timing-function: ease;
+  opacity: 1;
+  transition: transform 0.3s opacity 0.5s ease-in;
+  transform: translateX(0%);
 }/*# sourceMappingURL=style.css.map */

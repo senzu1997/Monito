@@ -1,0 +1,46 @@
+.hero-banner {
+    margin-top: 80px;
+    width: 45%;
+
+    h1 {
+        color: $primary-color;
+        font-weight: $font-weight-bold;
+        font-size: 3.5vw;
+        line-height: 68px;
+    }
+
+    h2 {
+        font-weight: 700;
+        color: $primary-color;
+        font-size: 2.5vw;
+        line-height: 60px;
+    }
+
+    p {
+        font-weight: 500;
+        line-height: 24px;
+        color: $neutral-color-80;
+        font-size: 1vw;
+    }
+}
+
+.intro-video {
+    // display: none;
+    position: fixed;
+    opacity: 0;
+    top: 13%;
+    right: 15%;
+    transform: translateX(200%);
+}
+
+.intro-video.open {
+    display: block;
+    position: fixed;
+    top: 13%;
+    right: 15%;
+    transition-timing-function: ease;
+    opacity: 1;
+    transition: transform 0.3s opacity 0.5s ease-in;
+    transform: translateX(0%);
+
+}

@@ -55,3 +55,45 @@
         margin-right: 20px;
     }
 }
+
+.view-intro {
+    color: $primary-color;
+    border: 1.5px solid;
+    padding: 0.60em 1.5em;
+    border-radius: 57px;
+    background-color: $secondary-color;
+    font-weight: 600;
+}
+
+
+.explore {
+    color: $color-white;
+    border: 1.5px solid;
+    padding: 0.60em 1.5em;
+    border-radius: 57px;
+    background-color: $primary-color;
+    font-weight: 500;
+}
+
+.hero-buttons :nth-child(1):hover {
+    color: $secondary-color;
+    background-color: $primary-color;
+    cursor: pointer;
+
+    img {
+        background-color: $secondary-color;
+        border-radius: 11px;
+    }
+}
+
+.hero-buttons :nth-child(2):hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+    cursor: pointer;
+}
+
+.intro-buttons button:hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+    cursor: pointer;
+}

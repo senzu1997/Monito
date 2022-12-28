@@ -5,10 +5,14 @@ const loginBtn = document.querySelector('.login');
 const registerForm = document.querySelector('#register-form');
 const registerBtn = document.querySelector('.registration');
 const closeBtn = document.querySelector('.close');
+const introBtn = document.querySelector('.view-intro');
+const introForm = document.querySelector('.intro-video');
+const closeIntro = document.querySelector('.close-intro');
 
 let menuOpen = false;
 let loginOpen = false;
 let registerOpen = false;
+let introOpen = false;
 
 menuBtn.addEventListener('click', () => {
     if (!menuOpen) {
@@ -22,34 +26,17 @@ menuBtn.addEventListener('click', () => {
 
     }
 })
-loginBtn.addEventListener('click', () => {
-    if (!loginOpen) {
-        loginForm.classList.add('open');
-        registerForm.classList.remove('open');
-        loginOpen = true;
-    } else {
-        loginForm.classList.remove('open');
-    }
-})
 
-registerBtn.addEventListener('click', () => {
-    if (!registerOpen) {
-        registerForm.classList.add('open');
-        loginForm.classList.remove('open');
-        registerOpen = true;
+introBtn.addEventListener('click', () => {
+    if (!introOpen) {
+        introForm.classList.add('open');
+        introOpen = true;
     } else {
-        registerForm.classList.remove('open');
-        registerOpen = false;
+        introForm.classList.remove('open')
+        introOpen = false;
     }
 })
-closeBtn.addEventListener('click', () => {
-    if (registerOpen) {
-        registerForm.classList.remove('open');
-    }
-})
-
-closeBtn.addEventListener('click', () => {
-    if (loginOpen) {
-        loginForm.classList.remove('open');
-    }
+closeIntro.addEventListener('click', () => {
+    introForm.classList.remove('open');
+    introOpen = false;
 })

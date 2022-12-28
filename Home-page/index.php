@@ -52,7 +52,27 @@ if (isset($_SESSION["user_id"])) {
             <div class="menu-btn-burger">
             </div>
         </div>
+        <div class="hero-banner">
+            <h1>One More Friend</h1>
+            <h2>Thousands More Fun!</h2>
+            <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have
+                fun. We have 200+ different pets that can meet your needs</p>
+            <div class="intro-video" id="introVideo">
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/pcDjNkW26fI?start=10"
+                    title="YouTube video player" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="intro-buttons">
+                    <button class="close-intro explore">Close</button>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="view-intro">View intro <img src="./images/icons/play-icon.png" alt="play-icon"></button>
+                <button class="explore">Explore now</button>
+            </div>
+        </div>
     </header>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
