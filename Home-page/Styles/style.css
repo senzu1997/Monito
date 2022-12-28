@@ -86,48 +86,6 @@ body {
   border: none;
 }
 
-.registration {
-  background-color: white !important;
-  color: #003459 !important;
-}
-
-.login {
-  margin-left: 50px;
-  margin-right: 10px;
-}
-
-.nav button:hover {
-  transition: 0.3s ease;
-  opacity: 0.7;
-}
-
-.submit,
-.close {
-  background-color: #003459;
-  color: white;
-  font-weight: 700;
-  padding: 5px;
-  border: 1px solid;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.register-form-btn {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 30%;
-  margin-top: -20px;
-  margin-bottom: 10px;
-}
-.register-form-btn .submit,
-.register-form-btn .close {
-  padding: 10px;
-  justify-content: center;
-  line-height: 20px;
-  margin-right: 20px;
-}
-
 .view-intro {
   color: #003459;
   border: 1.5px solid;
@@ -144,6 +102,7 @@ body {
   border-radius: 57px;
   background-color: #003459;
   font-weight: 500;
+  margin-left: 10px;
 }
 
 .hero-buttons :nth-child(1):hover {
@@ -166,6 +125,25 @@ body {
   color: #003459;
   background-color: #fceed5;
   cursor: pointer;
+}
+
+.header-bottom button {
+  color: #003459;
+  border: 1.5px solid;
+  padding: 0.6em 1.5em;
+  border-radius: 57px;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.header-bottom button:hover {
+  background-color: #003459;
+  color: white;
+  cursor: pointer;
+}
+.header-bottom button:hover img {
+  background-color: white;
+  border-radius: 10px;
 }
 
 @media (max-width: 900px) {
@@ -299,6 +277,7 @@ body {
   line-height: 24px;
   color: #242B33;
   font-size: 1vw;
+  margin-bottom: 35px;
 }
 
 .intro-video {
@@ -318,4 +297,26 @@ body {
   opacity: 1;
   transition: transform 0.3s opacity 0.5s ease-in;
   transform: translateX(0%);
+}
+
+section {
+  background-color: #FDFDFD;
+  max-width: 1440px;
+  margin: auto;
+  border-radius: 40px;
+  padding: 3% 5%;
+}
+
+.section-header .header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: bottom;
+}
+.section-header p {
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+.section-header h3 {
+  color: #003459;
 }/*# sourceMappingURL=style.css.map */
