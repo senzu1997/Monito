@@ -147,6 +147,30 @@ $gender = ($card->gender) ? " male " : " female ";
                 <a href="">About</a>
                 <a href="">Contact</a>
             </nav>
+            <div class="social">
+                <a href="">
+                    <img src="./Images/social_icons/fb.png" alt="Fb icon">
+                </a>
+                <a href="">
+                    <img src="./Images/social_icons/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="">
+                    <img src="./Images/social_icons/instagram.png" alt="Instagram icon">
+                </a>
+                <a href="">
+                    <img src="./Images/social_icons/youtube.png" alt="Youtube icon">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>&#169; 2022 Monito. All rights reserved.</p>
+            <img src="./Images/Frame.png" alt="Monito logo">
+            <div>
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+            </div>
+
         </div>
     </footer>
 
