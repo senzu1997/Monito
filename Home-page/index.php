@@ -121,9 +121,17 @@ $gender = ($card->gender) ? " male " : " female ";
             <img src="./Images/Pet_seller_icons/whiskas.png" alt="Whiskas logo">
         </div>
     </section>
-    <div class="adopt-banner">
-        
-    </div>
+    <article>
+        <div class="adopt-banner">
+            <h2>Adoption</h2>
+            <h3>We Need Help. So Do They.</h3>
+            <p>Adopt a pet and give it a home, it will love you unconditionally. </p>
+            <div class="banner-buttons">
+                <button class="explore">Explore Now</button>
+                <button class="view-intro">View Intro <img src="./Images/Icons/play-icon.png" alt="play-icon"></button>
+            </div>
+        </div>
+    </article>
 
 
 
