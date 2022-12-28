@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 if (isset($_SESSION["user_id"])) {
     $mysqli = include "./php/database/db.php";
@@ -8,6 +7,7 @@ if (isset($_SESSION["user_id"])) {
     $user = $result->fetch_assoc();
     $name = htmlspecialchars($user["username"]);
 }
+include "./routes.php";
 
 ?>
 <!DOCTYPE html>
@@ -83,7 +83,17 @@ if (isset($_SESSION["user_id"])) {
             </div>
         </div>
         <div class="card-container">
-
+            <?php foreach ($cards as $card) { ?>
+            <div class="card">
+                <img src="<?= $card->image ?>" alt="picture of a dog">
+                <p><?= $card->title ?></p>
+                <div>
+                    <p>Gender <?= $card->gender ?></p>
+                    <p>Age <?= $card->age ?></p>
+                </div>
+                <p><?= $card->price ?></p>
+            </div>
+            <?php } ?>
         </div>
     </section>
 

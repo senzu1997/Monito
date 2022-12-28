@@ -319,4 +319,9 @@ section {
 }
 .section-header h3 {
   color: #003459;
+}
+
+.card {
+  width: 280px;
+  height: 378px;
 }/*# sourceMappingURL=style.css.map */
