@@ -11,9 +11,4 @@ if($mysqli->connect_errno) {
 }
 return $mysqli;
 
-
-
-
-
-
 ?>
