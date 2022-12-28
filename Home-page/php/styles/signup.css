@@ -8,25 +8,25 @@
 
 body {
     background-color: #003459;
-    background-image: url(../../Images/nav.png) 50% no-repeat;
     background-position: top;
 }
 
 .register-container {
     width: 50%;
+    background: url(../../Images/nav.png) 50% no-repeat;
+    background-position: right bottom;
     height: 550px;
     background-color: #fceed5;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
     font-weight: 600;
-    gap: 10px;
     position: fixed;
     top: 25%;
     left: 50%;
     transform: translate(-50%, 0);
+    box-shadow: 1px 2px 13px 0px rgba(252, 238, 213, 0.75);
 }
 
 .register-container h2 {
@@ -38,26 +38,45 @@ body {
 
 .register-container button {
     margin-top: 20px;
-    width: 40%;
+    width: 30%;
     height: 10%;
     background-color: #003459;
     color: white;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 5px;
+
 }
 
 .register-container input {
     width: 400px;
     height: 30px;
-    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid;
+}
+
+.register-container input:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.register-container input:first-of-type {
+    margin-bottom: -5px;
 }
 
 .validation {
     color: red;
     font-size: 14px;
-    margin-top: -20px;
-    margin-bottom: 0px;
+    margin-bottom: -5px;
+    margin-top: 2px;
 
+}
+
+.last {
+    margin-top: -15px;
+}
+
+.register-container button:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }

@@ -8,19 +8,19 @@
 
 body {
     background-color: #003459;
-    background-image: url(../../Images/nav.png) 50% no-repeat;
-    background-position: top;
 }
 
 .login-container {
     width: 50%;
+    background: url(../../Images/nav.png) 50% no-repeat;
+    background-position: right bottom;
     height: 400px;
     background-color: #fceed5;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    box-shadow: 1px 2px 13px 0px rgba(252, 238, 213, 0.75);
     font-weight: 600;
     gap: 10px;
     position: fixed;
@@ -44,7 +44,8 @@ body {
     background-color: #003459;
     color: white;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 1px solid;
 }
 
 .login-container input {
@@ -68,4 +69,9 @@ body {
 
 .validation {
     color: red;
+}
+
+.login-container button:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }

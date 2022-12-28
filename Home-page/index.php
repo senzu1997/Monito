@@ -10,8 +10,6 @@ if (isset($_SESSION["user_id"])) {
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +39,7 @@ if (isset($_SESSION["user_id"])) {
             <?php if (isset($_SESSION["user_id"])) { ?>
             <p class="user"> Hello <?= $name; ?> <a href="./php/logout.php">Log out</a> </p>
             <?php } else { ?>
-            <div class="logind-form">
+            <div class="login-form">
                 <a href="./php/login.php"><button class="login">Login</button></a>
                 <a href="./php/signup.php"><button class="registration">Register</button></a>
             </div>
@@ -50,13 +48,8 @@ if (isset($_SESSION["user_id"])) {
         <div class="menu-toggle">
             <div class="menu-btn-burger">
             </div>
-            <div class="right-side">
-            </div>
         </div>
     </header>
-    <section>
-        <h2 class="h2">Labas</h2>
-    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

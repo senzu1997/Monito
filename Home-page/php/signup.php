@@ -13,11 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ./signup-success.html");
         exit;
     }
-
-
-
-
-
 }
 
 ?>
@@ -36,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class="register-container">
-        <h2>Register</h2>
+        <h2>Sign up</h2>
         <form action="./signup.php" method="POST">
             <div>
                 <label for="username">Username</label>
@@ -83,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             } ?>
             <?php if (($_SERVER["REQUEST_METHOD"] == "POST")) {
                 if ($mysqli->errno === 1062) {
-                    echo "<p class='validation'>" . "Email already taken" . "</p>";
+                    echo "<p class='validation last'>" . "Email already taken" . "</p>";
                 } else {
                     echo "";
                 }

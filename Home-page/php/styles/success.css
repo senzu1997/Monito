@@ -8,19 +8,19 @@
 
 body {
     background-color: #003459;
-    background-image: url(../../Images/nav.png) 50% no-repeat;
-    background-position: top;
 }
 
 .success-container {
     width: 50%;
-    height: 550px;
+    background: url(../../Images/nav.png) 50% no-repeat;
+    background-position: center bottom;
     background-color: #fceed5;
+    height: 550px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    box-shadow: 1px 2px 13px 0px rgba(252, 238, 213, 0.75);
     font-weight: 600;
     gap: 10px;
     position: fixed;

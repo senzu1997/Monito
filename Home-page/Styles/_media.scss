@@ -1,7 +1,10 @@
 @media (max-width: 900px) {
-    .header-container {
+    .header {
         display: flex;
+        position: relative;
     }
+
+
 
     .nav {
         display: grid;
@@ -9,7 +12,7 @@
         position: fixed;
         right: -100%;
         top: 0px;
-        background: url(/Images/nav-menu.png) 50% no-repeat;
+        background: url(../Images/nav-menu.png) 50% no-repeat;
         background-size: cover;
         height: 60%;
         width: 30%;
@@ -37,7 +40,7 @@
             top: 20px;
         }
 
-        .register-form {
+        .login-form {
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -45,12 +48,14 @@
             margin-bottom: 10px;
         }
 
-        .menu-toggle {
-            display: block;
-            position: fixed;
-            right: 10px;
-            top: 40px;
-        }
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        right: -370px;
+        top: 0;
+
     }
 
     .nav .login {
@@ -58,7 +63,7 @@
         margin-right: 0;
     }
 
-   .nav.active {
+    .nav.active {
         right: 0px;
     }
 }

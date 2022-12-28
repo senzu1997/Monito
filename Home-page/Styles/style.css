@@ -117,8 +117,9 @@ body {
 }
 
 @media (max-width: 900px) {
-  .header-container {
+  .header {
     display: flex;
+    position: relative;
   }
   .nav {
     display: grid;
@@ -126,7 +127,7 @@ body {
     position: fixed;
     right: -100%;
     top: 0px;
-    background: url(/Images/nav-menu.png) 50% no-repeat;
+    background: url(../Images/nav-menu.png) 50% no-repeat;
     background-size: cover;
     height: 60%;
     width: 30%;
@@ -149,18 +150,18 @@ body {
     left: 10px;
     top: 20px;
   }
-  .nav .register-form {
+  .nav .login-form {
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: left;
     margin-bottom: 10px;
   }
-  .nav .menu-toggle {
+  .menu-toggle {
     display: block;
     position: fixed;
-    right: 10px;
-    top: 40px;
+    right: -370px;
+    top: 0;
   }
   .nav .login {
     margin-left: 0;
