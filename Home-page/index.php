@@ -8,7 +8,8 @@ if (isset($_SESSION["user_id"])) {
     $name = htmlspecialchars($user["username"]);
 }
 include "./routes.php";
-$gender = ($card->gender) ? " male " : " female ";
+$gender = ($card->gender === 1) ? "male" : "female";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
