@@ -34,8 +34,7 @@ header {
   height: 40px;
 }
 .nav p {
-  color: white;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   color: #003459;
   margin-top: 10px;
@@ -45,6 +44,18 @@ header {
 .nav a:hover {
   opacity: 0.5;
   font-size: 16.1px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user span {
+  font-weight: lighter;
+}
+.user a {
+  margin: -5px 0 0 5px;
 }
 
 * {

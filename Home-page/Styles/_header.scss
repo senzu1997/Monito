@@ -38,8 +38,7 @@ header {
     }
 
     p {
-        color: white;
-        font-weight: $font-weight-bold;
+        font-weight: bold;
         font-size: 18px;
         color: $primary-color;
         margin-top: 10px;
@@ -50,4 +49,20 @@ header {
 .nav a:hover {
     opacity: 0.5;
     font-size: 16.1px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+        font-weight: lighter;
+    }
+
+    a {
+        margin: -5px 0 0 5px;
+
+    }
+
 }
