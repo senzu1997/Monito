@@ -111,7 +111,19 @@ $gender = ($card->gender) ? " male " : " female ";
             <p>Proud to be part of <span> Pet Sellers</span> </p>
             <button>View all our sellers <img src="./images/Icons/arrow-icon.png" alt=""></button>
         </div>
+        <div class="image-list">
+            <img src="./Images/Pet_seller_icons/bakers.png" alt="Bakers logo">
+            <img src="./Images/Pet_seller_icons/butchers.png" alt="Buchers logo">
+            <img src="./Images/Pet_seller_icons/felix.png" alt="Felix logo">
+            <img src="./Images/Pet_seller_icons/Good_boy.png" alt="Goodboy logo">
+            <img src="./Images/Pet_seller_icons/Pedigree.png" alt="Pedigree logo">
+            <img src="./Images/Pet_seller_icons/sheba.png" alt="Sheba logo">
+            <img src="./Images/Pet_seller_icons/whiskas.png" alt="Whiskas logo">
+        </div>
     </section>
+    <div class="adopt-banner">
+        
+    </div>
 
 
 

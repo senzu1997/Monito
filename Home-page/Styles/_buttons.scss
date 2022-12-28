@@ -71,3 +71,25 @@
         border-radius: 10px;
     }
 }
+
+.sellers-header button {
+    width: 202px;
+    height: 44px;
+    padding: 12px, 28px, 12px, 28px;
+    border-radius: 57px;
+    border: 1px solid;
+    color: $primary-color;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.sellers-header button:hover {
+    color: $color-white;
+    background-color: $primary-color;
+    cursor: pointer;
+
+    img {
+        border-radius: 20px;
+        background-color: $color-white;
+    }
+}
