@@ -8,7 +8,7 @@ if (isset($_SESSION["user_id"])) {
     $name = htmlspecialchars($user["username"]);
 }
 include "./routes.php";
-
+$gender = ($card->gender) ? " male " : " female ";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,12 +86,12 @@ include "./routes.php";
             <?php foreach ($cards as $card) { ?>
             <div class="card">
                 <img src="<?= $card->image ?>" alt="picture of a dog">
-                <p><?= $card->title ?></p>
-                <div>
-                    <p>Gender <?= $card->gender ?></p>
+                <p class="title"><?= $card->title ?></p>
+                <div class="gender">
+                    <p>Gender <?= $gender ?></p>
                     <p>Age <?= $card->age ?></p>
                 </div>
-                <p><?= $card->price ?></p>
+                <p>Price:<?= $card->price ?> &euro; </p>
             </div>
             <?php } ?>
         </div>
