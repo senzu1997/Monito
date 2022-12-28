@@ -1,0 +1,36 @@
+footer {
+    background-color: $secondary-color;
+    max-width: 1440px;
+    height: 35%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.footer-container {
+    background-color: $primary-color;
+    width: 75%;
+    height: 40%;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    padding: 32px;
+
+    h2 {
+        width: 40%;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+
+.input-container {
+    width: 60%;
+
+    input {
+        width: 70%;
+        height: 48px;
+        border-radius: 10px;
+        border: 1px solid;
+        padding-left: 10px;
+    }
+}

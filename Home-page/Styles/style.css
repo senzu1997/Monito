@@ -102,6 +102,7 @@ body {
   border-radius: 57px;
   background-color: #003459;
   font-weight: 500;
+  margin-left: 20px;
 }
 
 .hero-buttons :nth-child(1):hover {
@@ -164,6 +165,36 @@ body {
 .sellers-header button:hover img {
   border-radius: 20px;
   background-color: white;
+}
+
+.banner-buttons button {
+  margin: 0 20px 0 0px;
+}
+
+.banner-buttons :first-child:hover {
+  color: #003459;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.banner-buttons :nth-child(2):hover {
+  color: white;
+  background-color: #003459;
+  cursor: pointer;
+}
+.banner-buttons :nth-child(2):hover img {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.input-container button {
+  width: 163px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid;
+  background-color: #003459;
+  color: white;
+  margin-left: 10px;
 }
 
 @media (max-width: 900px) {
@@ -440,6 +471,7 @@ article {
   background-color: white;
   max-width: 1440px;
   margin: auto;
+  padding-bottom: 40px;
 }
 
 .adopt-banner {
@@ -463,5 +495,40 @@ article {
 .adopt-banner p {
   font-weight: 500;
   width: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #fceed5;
+  max-width: 1440px;
+  height: 35%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.footer-container {
+  background-color: #003459;
+  width: 75%;
+  height: 40%;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  padding: 32px;
+}
+.footer-container h2 {
+  width: 40%;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.input-container {
+  width: 60%;
+}
+.input-container input {
+  width: 70%;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid;
+  padding-left: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -132,6 +132,23 @@ $gender = ($card->gender) ? " male " : " female ";
             </div>
         </div>
     </article>
+    <footer>
+        <div class="footer-container">
+            <h2>Register Now So You Don't Miss Our Programs</h2>
+            <div class="input-container">
+                <input type="text" placeholder="Enter your Email">
+                <button type="submit">Subscribe Now</button>
+            </div>
+        </div>
+        <div class="footer-bottom-container">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Category</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </footer>
 
 
 
