@@ -31,10 +31,10 @@ include "./routes.php";
     <header>
         <div class="nav">
             <img src="./Images/Frame.png" alt="Monito logo">
-            <a href="">Home</a>
-            <a href="">Category</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+            <a href="#top">Home</a>
+            <a href="#card" onclick="scrollCategory()">Category</a>
+            <a href="#about" onclick="scrollAbout()">About</a>
+            <a href="#contact" onclick="scrollContact()">Contact</a>
             <?php if (isset($_SESSION["user_id"])) { ?>
                 <div class="user">
                     <p> Hello <span><?= $name; ?></span> </p>
@@ -81,7 +81,7 @@ include "./routes.php";
                 </button>
             </div>
         </div>
-        <div class="card-container">
+        <div id="cardView" class="card-container">
             <?php foreach ($cards as $card) { ?>
                 <div class="card">
                     <img src="<?= $card->image ?>" alt="picture of a dog">
@@ -147,10 +147,10 @@ include "./routes.php";
         </div>
         <div class="footer-bottom-container">
             <nav>
-                <a href="">Home</a>
-                <a href="">Category</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <a href="#top">Home</a>
+                <a href="#card-bottom" onclick="scrollCategory()">Category</a>
+                <a href="#about" onclick="scrollAbout()">About</a>
+                <a href="#contact" onclick="scrollContact()">Contact</a>
             </nav>
             <div class="social">
                 <a href="">

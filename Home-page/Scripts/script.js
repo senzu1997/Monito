@@ -8,6 +8,9 @@ const closeBtn = document.querySelector('.close');
 const introBtn = document.querySelector('.view-intro');
 const introForm = document.querySelector('.intro-video');
 const closeIntro = document.querySelector('.close-intro');
+const categoryBtn = document.querySelector('#category');
+const homeBtn = document.querySelector('#home');
+const cardContainer = document.querySelector('#cardView');
 
 let menuOpen = false;
 let loginOpen = false;
@@ -40,3 +43,21 @@ closeIntro.addEventListener('click', () => {
     introForm.classList.remove('open');
     introOpen = false;
 })
+
+
+$("a[href='#top']").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "smooth");
+    return false;
+});
+function scrollCategory() {
+    window.scrollTo(0, 700);
+}
+function scrollAbout() {
+    window.scrollTo(0, 1300);
+}
+function scrollContact() {
+    window.scrollTo(0, 2500);
+}
+
+
+
