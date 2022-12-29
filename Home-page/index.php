@@ -9,7 +9,6 @@ if (isset($_SESSION["user_id"])) {
 }
 include "./routes.php";
 $gender = ($card->gender === 1) ? "male" : "female";
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,16 +37,16 @@ $gender = ($card->gender === 1) ? "male" : "female";
             <a href="">About</a>
             <a href="">Contact</a>
             <?php if (isset($_SESSION["user_id"])) { ?>
-            <div class="user">
-                <p> Hello <span><?= $name; ?></span> </p>
-                <a href="./php/logout.php">Log out</a>
-            </div>
-            <?php } else { ?>
-            <div class="login-form">
-                <a href="./php/login.php"><button class="login">Login</button></a>
-                <a href="./php/signup.php"><button class="registration">Register</button></a>
-            </div>
-            <?php } ?>
+                <div class="user">
+                    <p> Hello <span><?= $name; ?></span> </p>
+                    <a href="./php/logout.php">Log out</a>
+                </div>
+                <?php } else { ?>
+                <div class="login-form">
+                    <a href="./php/login.php"><button class="login">Login</button></a>
+                    <a href="./php/signup.php"><button class="registration">Register</button></a>
+                </div>
+                <?php } ?>
         </div>
         <div class="menu-toggle">
             <div class="menu-btn-burger">
@@ -85,16 +84,22 @@ $gender = ($card->gender === 1) ? "male" : "female";
         </div>
         <div class="card-container">
             <?php foreach ($cards as $card) { ?>
-            <div class="card">
-                <img src="<?= $card->image ?>" alt="picture of a dog">
-                <p class="title"><?= $card->title ?></p>
-                <div class="gender">
-                    <p>Gender: <span><?= $gender ?></span> </p>
-                    <p>Age: <span><?= $card->age ?></span> months. </p>
+                <div class="card">
+                    <img src="<?= $card->image ?>" alt="picture of a dog">
+                    <p class="title">
+                        <?= $card->title ?>
+                    </p>
+                    <div class="gender">
+                        <p>Gender: <span>
+                                <?= $gender ?>
+                            </span> </p>
+                        <p>Age: <span><?= $card->age ?></span> months. </p>
+                    </div>
+                    <p>Price: <span>
+                            <?= $card->price ?> &euro;
+                        </span> </p>
                 </div>
-                <p>Price: <span><?= $card->price ?> &euro;</span> </p>
-            </div>
-            <?php } ?>
+                <?php } ?>
         </div>
         <div class="banner-container">
             <h3>One More Friend</h3>

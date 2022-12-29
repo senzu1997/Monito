@@ -1,12 +1,12 @@
 article {
     background-color: $color-white;
-    max-width: 1440px;
+    max-width: 85%;
     margin: auto;
     padding-bottom: 40px;
 }
 
 .adopt-banner {
-    width: 85%;
+    max-width: 75%;
     height: 40%;
     background: url(../Images/Banner_dog_paw.png) 50% no-repeat;
     margin: auto;

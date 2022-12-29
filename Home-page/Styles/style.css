@@ -7,7 +7,7 @@ header {
   margin: auto;
   background: url(../Images/Herro\ Banner.png) 50% no-repeat;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 85%;
   height: 80vh;
   border-radius: 0px 0px 40px 40px;
   padding-top: 30px;
@@ -15,7 +15,7 @@ header {
 }
 
 .nav {
-  max-width: 1440px;
+  max-width: 100%;
   height: 50px;
   line-height: 24px;
   margin: auto;
@@ -84,6 +84,7 @@ body {
   font-weight: 700;
   font-size: 15px;
   border: none;
+  margin-right: 20px;
 }
 
 .view-intro {
@@ -352,7 +353,7 @@ body {
 
 section {
   background-color: #FDFDFD;
-  max-width: 1440px;
+  max-width: 85%;
   margin: auto;
   padding: 3% 5%;
 }
@@ -379,8 +380,8 @@ section {
 }
 
 .card {
-  width: 280px;
-  height: 330px;
+  width: 18rem;
+  height: 22rem;
   padding: 6px;
   box-shadow: 2px 2px 21px -7px rgba(0, 0, 0, 0.75);
 }
@@ -416,7 +417,7 @@ section {
 }
 
 .banner-container {
-  width: 1180px;
+  max-width: 85%;
   height: 378px;
   background: url(../Images/Banner.png) 50% no-repeat;
   background-position: left bottom;
@@ -449,6 +450,7 @@ section {
 
 .sellers-header {
   font-weight: 500;
+  max-width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -469,13 +471,13 @@ section {
 
 article {
   background-color: white;
-  max-width: 1440px;
+  max-width: 85%;
   margin: auto;
   padding-bottom: 40px;
 }
 
 .adopt-banner {
-  width: 85%;
+  max-width: 75%;
   height: 40%;
   background: url(../Images/Banner_dog_paw.png) 50% no-repeat;
   margin: auto;
@@ -500,7 +502,7 @@ article {
 
 footer {
   background-color: #fceed5;
-  max-width: 1440px;
+  max-width: 85%;
   height: 35%;
   margin: auto;
   padding-top: 40px;
@@ -508,7 +510,7 @@ footer {
 
 .footer-container {
   background-color: #003459;
-  width: 83%;
+  max-width: 74%;
   height: 40%;
   margin: auto;
   border-radius: 20px;
