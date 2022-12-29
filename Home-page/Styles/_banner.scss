@@ -6,22 +6,24 @@ article {
 }
 
 .adopt-banner {
-    max-width: 75%;
-    height: 40%;
+    max-width: 85%;
+    height: 378px;
+    border-radius: 30px;
     background: url(../Images/Banner_dog_paw.png) 50% no-repeat;
+    background-size: cover;
     margin: auto;
-    padding: 63px 0 0 95px;
+    padding: 63px 0 0 145px;
 
     h2 {
         color: $primary-color;
         font-weight: $font-weight-bold;
-        font-size: 3vw;
+        font-size: 52px;
         // margin: 55px 0 10px 100px;
 
     }
 
     h3 {
-        font-size: 2vw;
+        font-size: 36px;
         font-weight: $font-weight-bold;
         color: $primary-color;
         margin-bottom: 20px;

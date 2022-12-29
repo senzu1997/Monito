@@ -1,10 +1,8 @@
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .header {
         display: flex;
         position: relative;
     }
-
-
 
     .nav {
         display: grid;
@@ -19,7 +17,6 @@
         transition: 0.3s;
         border-radius: 10px 0px 0px 10px;
         padding-top: 15px;
-
 
         a {
             margin: auto;
@@ -36,8 +33,9 @@
 
         img {
             position: fixed;
-            left: 10px;
-            top: 20px;
+            top: 1.5%;
+            left: 12%;
+            z-index: 11;
         }
 
         .login-form {
@@ -50,20 +48,58 @@
 
     }
 
+    .hero-banner {
+        h1 {
+            font-size: 10vw;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+
     .menu-toggle {
-        display: block;
+        display: block !important;
+        z-index: 11;
         position: fixed;
         right: -370px;
         top: 0;
 
     }
 
-    .nav .login {
+    .nav {
         margin-left: 0;
         margin-right: 0;
     }
 
     .nav.active {
-        right: 0px;
+        right: 7%;
+        z-index: 10;
+    }
+
+
+    .card-container {
+        display: grid;
+        grid-template-columns: auto auto auto !important;
+        gap: 5px;
+    }
+
+    .banner-container h3,
+    h4 {
+        color: black !important;
+    }
+
+    .image-list {
+        display: none !important;
+    }
+
+    .footer-bottom-container {
+        display: grid !important;
+        grid-template-rows: auto auto !important;
+        justify-content: center !important;
+        margin: auto;
     }
 }
+
+@media (max-width: 950px)
