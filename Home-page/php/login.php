@@ -35,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="login-container">
         <h2>Login</h2>
         <?php if ($is_invalid): ?>
-        <p class="validation">Invalid login</p>
-        <?php endif; ?>
+            <p class="validation">Invalid login</p>
+            <?php endif; ?>
         <form method="POST">
             <div>
                 <label for="email">Email</label>
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <button type="submit">Login</button>
             </div>
         </form>
-        <a href="../index.php"><button class="cancel">Cancel</button></a>
+        <a href="./index.php"><button class="cancel">Cancel</button></a>
     </div>
 </body>
 
