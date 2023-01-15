@@ -57,18 +57,17 @@ body {
     margin-top: 10px;
 }
 
-/* .cancel {
-    position: fixed;
-    right: 450px;
-    bottom: 78px;
-} */
-
 .cancel:hover {
     cursor: pointer;
 }
 
 .validation {
     color: red;
+}
+
+.cancel a {
+    text-decoration: none;
+    color: white;
 }
 
 .login-container button:hover {

@@ -48,17 +48,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <input type="password" name="password" id="name">
             <div>
                 <button type="submit">Login</button>
-                <a href="#homePage"><button onclick="goHome()" class="cancel">Cancel</button></a>
+                <button class="cancel"><a href="../index.php">Cancel</a></button>
             </div>
         </form>
     </div>
-    <script>
-        const cancelButton = document.querySelector('.cancel');
-
-        function goHome() {
-            window.location.href = "/Home-page/index.php";
-        }
-    </script>
 </body>
 
 </html>
