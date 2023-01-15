@@ -29,7 +29,7 @@ include "./routes.php";
 
 <body>
     <header>
-        <div class="nav">
+        <div id="#homePage" class="nav">
             <img src="./Images/Frame.png" alt="Monito logo">
             <a href="#top">Home</a>
             <a href="#card" onclick="scrollCategory()">Category</a>
@@ -40,12 +40,12 @@ include "./routes.php";
                     <p> Hello <span><?= $name; ?></span> </p>
                     <a href="./php/logout.php">Log out</a>
                 </div>
-                <?php } else { ?>
+            <?php } else { ?>
                 <div class="login-form">
                     <a href="./php/login.php"><button class="login">Login</button></a>
                     <a href="./php/signup.php"><button class="registration">Register</button></a>
                 </div>
-                <?php } ?>
+            <?php } ?>
         </div>
         <div class="menu-toggle">
             <div class="menu-btn-burger">
@@ -98,7 +98,7 @@ include "./routes.php";
                             <?= $card->price ?> &euro;
                         </span> </p>
                 </div>
-                <?php } ?>
+            <?php } ?>
         </div>
         <div class="banner-container">
             <h3>One More Friend</h3>
@@ -175,12 +175,8 @@ include "./routes.php";
                 <a href="">Terms of Service</a>
                 <a href="">Privacy Policy</a>
             </div>
-
         </div>
     </footer>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

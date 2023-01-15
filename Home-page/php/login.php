@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <h2>Login</h2>
         <?php if ($is_invalid): ?>
             <p class="validation">Invalid login</p>
-            <?php endif; ?>
+        <?php endif; ?>
         <form method="POST">
             <div>
                 <label for="email">Email</label>
@@ -48,10 +48,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <input type="password" name="password" id="name">
             <div>
                 <button type="submit">Login</button>
+                <a href="#homePage"><button onclick="goHome()" class="cancel">Cancel</button></a>
             </div>
         </form>
-        <a href="./index.php"><button class="cancel">Cancel</button></a>
     </div>
+    <script>
+        const cancelButton = document.querySelector('.cancel');
+
+        function goHome() {
+            window.location.href = "/Home-page/index.php";
+        }
+    </script>
 </body>
 
 </html>
