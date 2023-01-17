@@ -496,32 +496,6 @@ article {
   padding-bottom: 40px;
 }
 
-.adopt-banner {
-  max-width: 85%;
-  height: 378px;
-  border-radius: 30px;
-  background: url(../Images/Banner_dog_paw.png) 50% no-repeat;
-  background-size: cover;
-  margin: auto;
-  padding: 63px 0 0 145px;
-}
-.adopt-banner h2 {
-  color: #003459;
-  font-weight: 700;
-  font-size: 52px;
-}
-.adopt-banner h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #003459;
-  margin-bottom: 20px;
-}
-.adopt-banner p {
-  font-weight: 500;
-  width: 250px;
-  margin-bottom: 40px;
-}
-
 .banner-container {
   max-width: 100%;
   height: 378px;
@@ -554,6 +528,32 @@ article {
   margin-bottom: 30px;
 }
 
+.adopt-banner {
+  max-width: 1440px;
+  height: 378px;
+  border-radius: 30px;
+  background: url(../Images/Banner_dog_paw.png) 50% no-repeat;
+  background-size: cover;
+  margin: auto;
+  padding: 63px 0 0 145px;
+}
+.adopt-banner h2 {
+  color: #003459;
+  font-weight: 700;
+  font-size: 52px;
+}
+.adopt-banner h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #003459;
+  margin-bottom: 20px;
+}
+.adopt-banner p {
+  font-weight: 500;
+  width: 250px;
+  margin-bottom: 40px;
+}
+
 footer {
   background-color: #fceed5;
   max-width: 85%;
@@ -564,7 +564,7 @@ footer {
 
 .footer-container {
   background-color: #003459;
-  max-width: 74%;
+  max-width: 1440px;
   height: 40%;
   margin: auto;
   border-radius: 20px;

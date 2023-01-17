@@ -160,16 +160,16 @@ include "./routes.php";
                 <a href="#contact" onclick="scrollContact()">Contact</a>
             </nav>
             <div class="social">
-                <a href="">
+                <a href="https://www.facebook.com/KIKA.Lietuva/?locale=lt_LT">
                     <img src="./Images/social_icons/fb.png" alt="Fb icon">
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/company/kika-group/">
                     <img src="./Images/social_icons/twitter.png" alt="Twitter icon">
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/kika.lt/">
                     <img src="./Images/social_icons/instagram.png" alt="Instagram icon">
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/channel/UCH2pfkCyUSuTVqHGsN4_K7w/videos">
                     <img src="./Images/social_icons/youtube.png" alt="Youtube icon">
                 </a>
             </div>
