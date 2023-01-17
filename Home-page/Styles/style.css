@@ -14,13 +14,13 @@ header {
 }
 
 .nav {
-  max-width: 100%;
+  width: 100%;
   height: 50px;
   line-height: 24px;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .nav a {
   color: #003459;
@@ -46,15 +46,20 @@ header {
 }
 
 .user {
+  line-height: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .user span {
-  font-weight: lighter;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 18px;
+  margin-inline: 18px;
 }
 .user a {
   margin: -5px 0 0 5px;
+  color: white;
 }
 
 * {
@@ -94,6 +99,10 @@ body {
   font-weight: 600;
 }
 
+.logout {
+  margin-top: -5px;
+}
+
 .explore {
   color: white;
   border: 1.5px solid;
@@ -102,6 +111,11 @@ body {
   background-color: #003459;
   font-weight: 500;
   margin-left: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
 }
 
 .hero-buttons :nth-child(1):hover {
@@ -237,6 +251,9 @@ body {
     gap: 5px;
     align-items: left;
     margin-bottom: 10px;
+  }
+  .hero-banner {
+    align-items: flex-start !important;
   }
   .hero-banner h1 {
     font-size: 10vw;
@@ -400,7 +417,7 @@ section {
 }
 
 .card-container {
-  max-width: 95%;
+  max-width: 100%;
   margin-top: 30px;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -444,40 +461,9 @@ section {
   cursor: pointer;
 }
 
-.banner-container {
-  max-width: 85%;
-  height: 378px;
-  background: url(../Images/Banner.png) 50% no-repeat;
-  background-size: cover;
-  margin: auto;
-  margin-top: 60px;
-  display: flex;
-  justify-content: top;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 50px;
-}
-.banner-container h3 {
-  font-size: 52px;
-  font-weight: 700;
-  color: #003459;
-  margin-top: -10px;
-}
-.banner-container h4 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #003459;
-  margin: -10px 0 20px 0;
-}
-.banner-container p {
-  font-weight: 500;
-  width: 350px;
-  margin-bottom: 30px;
-}
-
 .sellers-header {
   font-weight: 500;
-  max-width: 85%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -491,15 +477,16 @@ section {
 }
 
 .image-list {
-  max-width: 85%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   gap: 20px;
   margin: auto;
+  justify-content: space-evenly;
 }
 .image-list img {
-  width: 15%;
-  height: 15%;
+  width: 100%;
+  height: 100%;
 }
 
 article {
@@ -533,6 +520,38 @@ article {
   font-weight: 500;
   width: 250px;
   margin-bottom: 40px;
+}
+
+.banner-container {
+  max-width: 100%;
+  height: 378px;
+  background: url(../Images/Banner.png) 50% no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px;
+  border-radius: 20px;
+}
+.banner-container h3 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #003459;
+  margin-top: -10px;
+}
+.banner-container h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #003459;
+  margin: -10px 0 20px 0;
+}
+.banner-container p {
+  font-weight: 500;
+  width: 350px;
+  margin-bottom: 30px;
 }
 
 footer {

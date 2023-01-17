@@ -37,8 +37,10 @@ include "./routes.php";
             <a href="#contact" onclick="scrollContact()">Contact</a>
             <?php if (isset($_SESSION["user_id"])) { ?>
                 <div class="user">
-                    <p> Hello <span><?= $name; ?></span> </p>
-                    <a href="./php/logout.php">Log out</a>
+                    <p> Hello <span>
+                            <?= $name; ?>
+                        </span> </p>
+                    <button class="login logout"><a href="./php/logout.php">Log out</a></button>
                 </div>
             <?php } else { ?>
                 <div class="login-form">
@@ -117,13 +119,18 @@ include "./routes.php";
             <button>View all our sellers <img src="./images/Icons/arrow-icon.png" alt=""></button>
         </div>
         <div class="image-list">
-            <img src="./Images/Pet_seller_icons/bakers.png" alt="Bakers logo">
-            <img src="./Images/Pet_seller_icons/butchers.png" alt="Buchers logo">
-            <img src="./Images/Pet_seller_icons/felix.png" alt="Felix logo">
-            <img src="./Images/Pet_seller_icons/Good_boy.png" alt="Goodboy logo">
-            <img src="./Images/Pet_seller_icons/Pedigree.png" alt="Pedigree logo">
-            <img src="./Images/Pet_seller_icons/sheba.png" alt="Sheba logo">
-            <img src="./Images/Pet_seller_icons/whiskas.png" alt="Whiskas logo">
+            <a href="https://www.purina.co.uk/brands/bakers"><img src="./Images/Pet_seller_icons/bakers.png"
+                    alt="Bakers logo"></a>
+            <a href="https://butchersdogfood.co.uk/"><img src="./Images/Pet_seller_icons/butchers.png"
+                    alt="Buchers logo"></a>
+            <a href="https://www.nestle.com/brands/petcare/felix"> <img src="./Images/Pet_seller_icons/felix.png"
+                    alt="Felix logo"></a>
+            <a href="https://www.goodboy.co.uk/our-products/"> <img src="./Images/Pet_seller_icons/Good_boy.png"
+                    alt="Goodboy logo"></a>
+            <a href="https://www.pedigree.com/"> <img src="./Images/Pet_seller_icons/Pedigree.png"
+                    alt="Pedigree logo"></a>
+            <a href="https://www.sheba.com/"> <img src="./Images/Pet_seller_icons/sheba.png" alt="Sheba logo"></a>
+            <a href="https://www.whiskas.com/"><img src="./Images/Pet_seller_icons/whiskas.png" alt="Whiskas logo"></a>
         </div>
     </section>
     <article>
