@@ -33,7 +33,7 @@ include "./routes.php";
             <img src="./Images/Frame.png" alt="Monito logo">
             <a href="#top">Home</a>
             <a href="#card" onclick="scrollCategory()">Category</a>
-            <a href="#about" onclick="scrollAbout()">About</a>
+            <a href="#about" id="scrollAbout" onclick="scrollAbout()">About</a>
             <a href="#contact" onclick="scrollContact()">Contact</a>
             <?php if (isset($_SESSION["user_id"])) { ?>
                 <div class="user">

@@ -1,4 +1,4 @@
-const menuBtn = document.querySelector('.menu-toggle');
+1const menuBtn = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector(".nav");
 const loginForm = document.querySelector('#login-form');
 const loginBtn = document.querySelector('.login');
@@ -43,7 +43,6 @@ closeIntro.addEventListener('click', () => {
     introForm.classList.remove('open');
     introOpen = false;
 })
-
 
 $("a[href='#top']").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "smooth");
