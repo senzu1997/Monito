@@ -5,8 +5,7 @@ const loginBtn = document.querySelector('.login');
 const registerForm = document.querySelector('#register-form');
 const registerBtn = document.querySelector('.registration');
 const closeBtn = document.querySelector('.close');
-const introBtn = document.querySelector('.view-intro');
-const introButton = document.getElementById('introBtn');
+const introButton = document.querySelectorAll('#introBtn');
 const introForm = document.querySelector('.intro-video');
 const closeIntro = document.querySelector('.close-intro');
 const categoryBtn = document.querySelector('#category');
@@ -26,6 +25,19 @@ const modalClose = function () {
     modalEl.classList.add('hidden');
     overlayEl.classList.add('hidden');
 }
+const modalOpen = function () {
+    modalEl.classList.remove('hidden');
+    overlayEl.classList.remove('hidden');
+    iFrame.src = videoUrl;
+}
+document.addEventListener('keydown', function () {
+    modalClose();
+    iFrame.src = " "
+})
+
+for (let i = 0; i < introButton.length; i++) {
+    introButton[i].addEventListener('click', modalOpen)
+}
 
 menuBtn.addEventListener('click', () => {
     if (!menuOpen) {
@@ -39,16 +51,7 @@ menuBtn.addEventListener('click', () => {
     }
 })
 
-introButton.addEventListener('click', function () {
-    
-    modalEl.classList.toggle('hidden');
-    overlayEl.classList.toggle('hidden');
-    iFrame.src = videoUrl;
-})
-document.addEventListener('keydown', function () {
-    modalClose();
-    iFrame.src = " "
-})
+
 
 $("a[href='#top']").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "smooth");
