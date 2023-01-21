@@ -58,20 +58,18 @@ include "./routes.php";
             <h2>Thousands More Fun!</h2>
             <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have
                 fun. We have 200+ different pets that can meet your needs</p>
-            <div class="intro-video" id="introVideo">
-                <iframe width="700" height="500" src="https://www.youtube.com/embed/pcDjNkW26fI?start=10"
-                    title="YouTube video player" frameborder="1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="intro-buttons">
-                    <button class="close-intro explore">Close</button>
-                </div>
-            </div>
-            <div class="hero-buttons">
-                <button class="view-intro">View intro <img src="./images/icons/play-icon.png" alt="play-icon"></button>
-                <button class="explore">Explore now</button>
-            </div>
         </div>
+        <div class="hero-buttons">
+            <button class="view-intro">View intro <img src="./images/icons/play-icon.png" alt="play-icon"></button>
+            <button class="explore">Explore now</button>
+        </div>
+        <div class="modal-open hidden" id="modal">
+            <iframe width="750" height="400" src="https://www.youtube.com/embed/MUdrGpYsUao"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="overlay hidden "></div>
     </header>
     <section>
         <div class="section-header">
@@ -94,7 +92,9 @@ include "./routes.php";
                         <p>Gender: <span>
                                 <?=($card->gender) ? "male" : "female"; ?>
                             </span> </p>
-                        <p>Age: <span><?= $card->age ?></span> months. </p>
+                        <p>Age: <span>
+                                <?= $card->age ?>
+                            </span> months. </p>
                     </div>
                     <p>Price: <span>
                             <?= $card->price ?> &euro;
