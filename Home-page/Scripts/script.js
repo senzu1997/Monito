@@ -6,6 +6,7 @@ const registerForm = document.querySelector('#register-form');
 const registerBtn = document.querySelector('.registration');
 const closeBtn = document.querySelector('.close');
 const introBtn = document.querySelector('.view-intro');
+const introButton = document.getElementById('introBtn');
 const introForm = document.querySelector('.intro-video');
 const closeIntro = document.querySelector('.close-intro');
 const categoryBtn = document.querySelector('#category');
@@ -13,38 +14,17 @@ const homeBtn = document.querySelector('#home');
 const cardContainer = document.querySelector('#cardView');
 const modalEl = document.querySelector('.modal-open');
 const overlayEl = document.querySelector('.overlay');
-
+const videoUrl = "https://www.youtube.com/embed/MUdrGpYsUao";
+const iFrame = document.getElementById('video');
 
 let menuOpen = false;
 let loginOpen = false;
 let registerOpen = false;
 let introOpen = false;
-const stopVideo = function () {
-    let iFrame = document.querySelector('iframe');
-    let video = document.querySelector('video');
-
-    if (iFrame) {
-        let iFrameSrc = iFrame.src;
-        iFrame.src = iFrame;
-    } else {
-        iFrame.src = "https://www.youtube.com/embed/MUdrGpYsUao"
-    }
-
-    if (iFrame) {
-        video.pause();
-    }
-}
-const resumeVideo = function () {
-    let iFrame = document.querySelector('iframe');
-    if (!iFrame) {
-        iFrame.src = "https://youtu.be/MUdrGpYsUao"
-    }
-}
 
 const modalClose = function () {
     modalEl.classList.add('hidden');
     overlayEl.classList.add('hidden');
-    stopVideo();
 }
 
 menuBtn.addEventListener('click', () => {
@@ -59,17 +39,15 @@ menuBtn.addEventListener('click', () => {
     }
 })
 
-introBtn.addEventListener('click', function () {
+introButton.addEventListener('click', function () {
+    
     modalEl.classList.toggle('hidden');
     overlayEl.classList.toggle('hidden');
-    resumeVideo();
+    iFrame.src = videoUrl;
 })
-document.addEventListener('keydown', function (event) {
-    if (event.key === "Escape" && !modalEl.classList.contains('hidden'))
-        modalClose();
-});
 document.addEventListener('keydown', function () {
     modalClose();
+    iFrame.src = " "
 })
 
 $("a[href='#top']").click(function () {

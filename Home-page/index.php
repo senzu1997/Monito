@@ -60,11 +60,12 @@ include "./routes.php";
                 fun. We have 200+ different pets that can meet your needs</p>
         </div>
         <div class="hero-buttons">
-            <button class="view-intro">View intro <img src="./images/icons/play-icon.png" alt="play-icon"></button>
+            <button class="view-intro" id="introBtn">View intro <img src="./images/icons/play-icon.png"
+                    alt="play-icon"></button>
             <button class="explore">Explore now</button>
         </div>
         <div class="modal-open hidden" id="modal">
-            <iframe width="750" height="400" src="https://www.youtube.com/embed/MUdrGpYsUao"
+            <iframe id="video" width="750" height="400" src="https://www.youtube.com/embed/MUdrGpYsUao"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
@@ -108,7 +109,8 @@ include "./routes.php";
             <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have
                 fun. We have 200+ different pets that can meet your needs!</p>
             <div class="banner-buttons">
-                <button class="view-intro">View intro <img src="./images/icons/play-icon.png" alt="play-icon"></button>
+                <button class="view-intro" id="introBtn">View intro <img src="./images/icons/play-icon.png"
+                        alt="play-icon"></button>
                 <button class="explore">Explore now</button>
             </div>
         </div>
@@ -140,7 +142,8 @@ include "./routes.php";
             <p>Adopt a pet and give it a home, it will love you unconditionally. </p>
             <div class="banner-buttons">
                 <button class="explore">Explore Now</button>
-                <button class="view-intro">View Intro <img src="./Images/Icons/play-icon.png" alt="play-icon"></button>
+                <button class="view-intro" id="introBtn">View Intro <img src="./Images/Icons/play-icon.png"
+                        alt="play-icon"></button>
             </div>
         </div>
     </article>
